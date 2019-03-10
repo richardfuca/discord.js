@@ -166,7 +166,7 @@ class Collection extends Map {
    * [MDN](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Map/get) for details.</warn>
    * @param {Function} fn The function to test with (should return boolean)
    * @param {*} [thisArg] Value to use as `this` when executing function
-   * @returns {*}
+   * @returns {* | undefined}
    * @example collection.find(user => user.username === 'Bob');
    */
   find(fn, thisArg) {
